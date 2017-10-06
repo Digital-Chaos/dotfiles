@@ -91,7 +91,7 @@ Mod4 D :ToggleDecor
 #Mod4 Right :MacroCmd {MoveTo 50% 0%} {ResizeTo 50% 100%}
 
 # open the window menu
-Mod4 Space :WindowMenu
+#Mod4 Space :WindowMenu
 
 # exit fluxbox
 Mod4 Shift E :Exit
