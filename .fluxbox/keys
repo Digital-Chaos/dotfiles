@@ -11,22 +11,22 @@ OnDesktop Mouse3 :RootMenu
 #OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
 #OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
 
-# Mod4 + left click to move a window
+# Move window with mouse
 OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
-# Mod4 + Arrows to move window
-Mod4 Up    :MoveUp    10
-Mod4 Down  :MoveDown  10
-Mod4 Left  :MoveLeft  10
-Mod4 Right :MoveRight 10
+# Move window with keys
+Mod4 Shift Up    :MoveUp    10
+Mod4 Shift Down  :MoveDown  10
+Mod4 Shift Left  :MoveLeft  10
+Mod4 Shift Right :MoveRight 10
 
-# Mod4 + right click to resize a window
+# Resize window with mouse
 OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
-# Mod4 + Shift + Arrows to resize window
+# Resize window with keys
 Mod4 Shift Up    :ResizeVertical   -10
 Mod4 Shift Down  :ResizeVertical    10
 Mod4 Shift Left  :ResizeHorizontal -10
