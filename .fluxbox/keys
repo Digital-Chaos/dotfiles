@@ -27,10 +27,10 @@ OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
 # Resize window with keys
-Mod4 Shift Up    :ResizeVertical   -10
-Mod4 Shift Down  :ResizeVertical    10
-Mod4 Shift Left  :ResizeHorizontal -10
-Mod4 Shift Right :ResizeHorizontal  10
+Mod4 Up    :ResizeVertical   -10
+Mod4 Down  :ResizeVertical    10
+Mod4 Left  :ResizeHorizontal -10
+Mod4 Right :ResizeHorizontal  10
 
 # alt + middle click to lower the window
 OnWindow Mod1 Mouse2 :Lower
