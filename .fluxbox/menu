@@ -58,7 +58,7 @@
       [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
 [end]
 [submenu] (Wallpaper)
-      [wallpapers] (~/Wallpaper) {feh --bg-scale}
+      [wallpapers] (~/Wallpaper) {fbsetbg}
 [end]
       [commanddialog] (Fluxbox Command)
       [reconfig] (Reload config)
