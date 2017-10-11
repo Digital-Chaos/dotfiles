@@ -16,21 +16,21 @@ OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
 # Move window with keys
-Mod4 Shift Up    :MoveUp    10
-Mod4 Shift Down  :MoveDown  10
-Mod4 Shift Left  :MoveLeft  10
-Mod4 Shift Right :MoveRight 10
+Mod4 Up    :MoveUp    10
+Mod4 Down  :MoveDown  10
+Mod4 Left  :MoveLeft  10
+Mod4 Right :MoveRight 10
 
 # Resize window with mouse
-OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnWindow Mod4 Shift Mouse1 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
 # Resize window with keys
-Mod4 Up    :ResizeVertical   -10
-Mod4 Down  :ResizeVertical    10
-Mod4 Left  :ResizeHorizontal -10
-Mod4 Right :ResizeHorizontal  10
+Mod4 Shift Up    :ResizeVertical   -10
+Mod4 Shift Down  :ResizeVertical    10
+Mod4 Shift Left  :ResizeHorizontal -10
+Mod4 Shift Right :ResizeHorizontal  10
 
 # alt + middle click to lower the window
 OnWindow Mod1 Mouse2 :Lower
@@ -52,8 +52,8 @@ OnTitlebar Mouse2 :Lower
 OnTitlebar Mouse3 :WindowMenu
 
 # mod4 + tab to cycle through all windows
-Mod4 Tab :PrevWindow
-Mod4 Shift Tab :NextWindow
+Mod4 Tab :NextWindow {static}
+Mod4 Shift Tab :PrevWindow {static}
 
 # cycle through tabs in the current window
 #Mod4 Tab :NextTab
@@ -85,7 +85,8 @@ Mod4 V :MaximizeVertical
 Mod4 H :MaximizeHorizontal
 Mod4 F :Fullscreen
 Mod4 S :Shade
-Mod4 D :ToggleDecor
+Mod4 A :ArrangeWindowsStackRight
+Mod4 D :ExecCommand $(dmenu_path | dmenu -fn 'Liberation-8' -nb black -nf white )
 
 #Mod4 Left :MacroCmd {MoveTo 0% 0%} {ResizeTo 50% 100%}
 #Mod4 Right :MacroCmd {MoveTo 50% 0%} {ResizeTo 50% 100%}
