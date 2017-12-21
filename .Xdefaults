@@ -23,3 +23,11 @@ URxvt.scrollBar: false
 *color13:                 #ff55ff
 *color14:                 #55ffff
 *color15:                 #ffffff
+
+Xft.dpi:	128
+Xft.antialias:	true
+Xft.autohint:	false
+Xft.hinting:	true
+Xft.hintstyle:	hintslight
+Xft.lcdfilter:	lcddefault
+Xft.rgba:	rgb

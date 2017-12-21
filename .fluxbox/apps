@@ -3,4 +3,9 @@
   [Layer]	{2}
 [end]
 [app] (name=urxvt) (class=URxvt)
+  [Maximized]	{yes}
+[end]
+[app] (class=Firefox)
+  [Deco]        {BORDER}
+  [Maximized]	{yes}
 [end]

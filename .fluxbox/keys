@@ -16,10 +16,17 @@ OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
 # Move window with keys
-Mod4 Up    :MoveUp    10
-Mod4 Down  :MoveDown  10
-Mod4 Left  :MoveLeft  10
-Mod4 Right :MoveRight 10
+#Mod4 Up    :MoveUp    10
+#Mod4 Down  :MoveDown  10
+#Mod4 Left  :MoveLeft  10
+#Mod4 Right :MoveRight 10
+
+# Tiling
+Mod4 Left  :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Left}
+Mod4 Right :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Right}
+Mod4 Up    :Maximize
+Mod4 Down  :Iconify
+
 
 # Resize window with mouse
 OnWindow Mod4 Shift Mouse1 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
@@ -86,7 +93,8 @@ Mod4 H :MaximizeHorizontal
 Mod4 F :Fullscreen
 Mod4 S :Shade
 Mod4 A :ArrangeWindowsStackRight
-Mod4 D :ExecCommand $(dmenu_path | dmenu -fn 'Liberation-8' -nb black -nf white )
+Mod4 D :ToggleDecor
+Mod4 X :ExecCommand $(dmenu_path | dmenu -fn 'dejavusans-8' -nb black -nf white )
 
 #Mod4 Left :MacroCmd {MoveTo 0% 0%} {ResizeTo 50% 100%}
 #Mod4 Right :MacroCmd {MoveTo 50% 0%} {ResizeTo 50% 100%}

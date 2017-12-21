@@ -19,8 +19,8 @@
       [exec] (URxvt) {urxvt}
       [exec] (Firefox) {firefox}
       [exec] (Thunderbird) {thunderbird}
-      [exec] (Sublime) {sublime}
-      [exec] (IntelliJ) {idea}
+      [exec] (SublimeText) {sublime}
+      [exec] (IntelliJ IDEA) {idea}
       [exec] (PCManFM) {pcmanfm}
       [exec] (Xmms) {xmms}
       [exec] (Vlc) {vlc}
@@ -28,6 +28,7 @@
       [exec] (ScummVM) {scummvm}
       [exec] (DarkPlaces) {darkplaces-sdl}
       [exec] (XSnow) {xsnow -nosanta -notrees &}
+      [exec] (LxAppearance) {lxappearance}
 [submenu] (Editors)
       [exec] (Vim) {urxvt -e vim}
       [exec] (Nano) {urxvt -e nano}
