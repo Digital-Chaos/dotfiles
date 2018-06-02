@@ -16,4 +16,13 @@ compinit
 export CLICOLOR=true
 
 # Coloured Prompt
-PROMPT='%F{green}%n %F{cyan}@%m %F{blue}%~%f %# '
+PROMPT='%F{green}%n %F{cyan}%m %F{blue}%~%f %# '
+
+# Add locally installed C Headers to compiler search path
+export CPATH=/usr/local/include
+
+# Aliases
+alias cls=clear
+alias ll="ls -l"
+alias gmk=gmake
+alias mk=make
