@@ -12,11 +12,19 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Coloured ls
-export CLICOLOR=true
+# Load Version Control Info extension
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:git:*' formats '%F{magenta}(%b) '
+#zstyle ':vcs_info:*' formats '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
+
+# Colourized ls
+export COLORTERM=yes
 
 # Coloured Prompt
-PROMPT='%F{green}%n %F{cyan}%m %F{blue}%~%f %# '
+setopt PROMPT_SUBST
+PROMPT='%F{green}%n %F{cyan}%m %F{blue}%~ ${vcs_info_msg_0_}%f%# '
 
 # Add locally installed C Headers to compiler search path
 export CPATH=/usr/local/include
