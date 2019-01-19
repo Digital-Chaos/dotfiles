@@ -1,0 +1,14 @@
+{
+	"always_show_minimap_viewport": true,
+	"atomic_save": true,
+	"auto_match_enabled": false,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"drag_text": false,
+	"font_size": 10,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false,
+}
