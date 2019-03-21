@@ -17,6 +17,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:git:*' formats '%F{magenta}(%b) '
+zstyle ':vcs_info:svn:*' formats '%F{magenta}(%b) '
 #zstyle ':vcs_info:*' formats '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
 
 # Colourized ls
@@ -28,6 +29,12 @@ PROMPT='%F{green}%n %F{cyan}%m %F{blue}%~ ${vcs_info_msg_0_}%f%# '
 
 # Add locally installed C Headers to compiler search path
 export CPATH=/usr/local/include
+
+# Set default text editor
+export EDITOR=/usr/local/bin/nano
+
+# Set default pager
+export PAGER=less
 
 # Aliases
 alias cls=clear
