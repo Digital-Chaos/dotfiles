@@ -1,0 +1,4 @@
+! urxvt settings
+
+URxvt.geometry: 118x50
+URxvt.scrollBar: false

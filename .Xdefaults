@@ -1,33 +1,10 @@
-! Obsidian color scheme
+! Xdefaults settings
 
-URxvt.geometry: 118x50
-URxvt.scrollBar: false
+! Colour scheme
+#include ".Xdefaults.d/colours/gruvbox-dark"
 
-*background:              #283033
-*foreground:              #cdcdcd
-*cursorColor:             #c0cad0
+! Urxvt terminal settings
+#include ".Xdefaults.d/urxvt"
 
-*color0:                  #000000
-*color1:                  #a60001
-*color2:                  #00bb00
-*color3:                  #fecd22
-*color4:                  #3a9bdb
-*color5:                  #bb00bb
-*color6:                  #00bbbb
-*color7:                  #bbbbbb
-*color8:                  #555555
-*color9:                  #ff0003
-*color10:                 #93c863
-*color11:                 #fef874
-*color12:                 #a1d7ff
-*color13:                 #ff55ff
-*color14:                 #55ffff
-*color15:                 #ffffff
-
-Xft.dpi:	128
-Xft.antialias:	true
-Xft.autohint:	false
-Xft.hinting:	true
-Xft.hintstyle:	hintslight
-Xft.lcdfilter:	lcddefault
-Xft.rgba:	rgb
+! Xft font settings
+#include ".Xdefaults.d/xft"
